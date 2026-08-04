@@ -22,7 +22,7 @@ Informe claramente:
 
 ## Remoção de conteúdo
 
-Autores ou representantes podem abrir uma *Issue* solicitando correção de crédito ou remoção. Inclua elementos suficientes para verificar a relação com o texto, sem publicar documentos pessoais sensíveis.
+Autores ou representantes podem abrir uma *Issue* com o template **Solicitar remoção de conteúdo** pedindo a remoção de uma redação ou dado. Inclua elementos suficientes para verificar a relação com o texto, sem publicar documentos pessoais sensíveis. Veja o processo completo em [DIREITOS_AUTORAIS.md](DIREITOS_AUTORAIS.md#como-funciona-o-pedido-de-remoção).
 
 ## Critérios editoriais
 

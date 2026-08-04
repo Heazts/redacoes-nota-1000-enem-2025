@@ -34,21 +34,23 @@ Pesquisa atualizada em **3 de agosto de 2026**.
 - `fontes/FONTES.md`: relação das fontes mencionadas no material, com URL exata por redação.
 - `scripts/validar_catalogo.py`: validação automática da integridade do catálogo (rodada em CI a cada alteração).
 - `CONTRIBUTING.md`: instruções para sugerir novas redações ou correções.
-- `DIREITOS_AUTORAIS.md`: informações sobre finalidade educacional e direitos autorais.
+- `DIREITOS_AUTORAIS.md`: informações sobre finalidade educacional, direitos autorais e processo de remoção.
+- `LICENSE.md`: licença do material original do projeto (código, catálogo e documentação).
 
 ## Como contribuir
 
-Abra uma *Issue* para:
+Abra uma *Issue* usando o template correspondente:
 
-- informar uma nova redação publicamente disponível;
-- corrigir autoria, localidade, nota ou fonte;
-- comunicar link indisponível;
-- solicitar correção ou remoção de conteúdo.
+- **Sugerir nova redação** — informar uma redação publicamente disponível ainda não catalogada;
+- **Correção de informação** — corrigir autoria, localidade, nota, fonte ou comunicar link indisponível;
+- **Solicitar remoção de conteúdo** — autor(a) ou representante legal pede a remoção de uma redação ou dado.
 
 Toda inclusão precisa apresentar uma fonte pública confiável que confirme a autoria, a nota e a relação com o ENEM 2025.
 
-## Aviso
+## Licença e direitos autorais
 
-Este é um projeto independente, sem vínculo com o Inep, o Ministério da Educação ou as páginas citadas. Os textos pertencem aos respectivos autores. Consulte [DIREITOS_AUTORAIS.md](DIREITOS_AUTORAIS.md).
+O código, o catálogo (`dados/catalogo.csv`) e a documentação deste repositório são de autoria de **Heazts** e estão licenciados conforme [LICENSE.md](LICENSE.md) (MIT para código, CC BY 4.0 para dados e documentação).
+
+As redações reproduzidas no PDF **não** estão cobertas por essa licença: pertencem aos respectivos autores e titulares. Este é um projeto independente, sem vínculo com o Inep, o Ministério da Educação ou as páginas citadas. Consulte [DIREITOS_AUTORAIS.md](DIREITOS_AUTORAIS.md) para o detalhamento e o processo de remoção.
 
 Organização: **Heazts**.
