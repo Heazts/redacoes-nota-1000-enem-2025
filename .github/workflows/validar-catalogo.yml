@@ -1,0 +1,23 @@
+name: Validar catálogo
+
+on:
+  push:
+    paths:
+      - "dados/catalogo.csv"
+      - "scripts/validar_catalogo.py"
+      - ".github/workflows/validar-catalogo.yml"
+  pull_request:
+    paths:
+      - "dados/catalogo.csv"
+      - "scripts/validar_catalogo.py"
+      - ".github/workflows/validar-catalogo.yml"
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python3 scripts/validar_catalogo.py

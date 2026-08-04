@@ -30,8 +30,9 @@ Pesquisa atualizada em **3 de agosto de 2026**.
 ## Arquivos
 
 - `coletanea/`: PDF completo para leitura e estudo.
-- `dados/catalogo.csv`: catálogo em formato aberto.
-- `fontes/FONTES.md`: relação das fontes mencionadas no material.
+- `dados/catalogo.csv`: catálogo em formato aberto, com link direto e data de acesso a cada fonte.
+- `fontes/FONTES.md`: relação das fontes mencionadas no material, com URL exata por redação.
+- `scripts/validar_catalogo.py`: validação automática da integridade do catálogo (rodada em CI a cada alteração).
 - `CONTRIBUTING.md`: instruções para sugerir novas redações ou correções.
 - `DIREITOS_AUTORAIS.md`: informações sobre finalidade educacional e direitos autorais.
 
