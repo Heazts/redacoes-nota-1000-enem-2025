@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: Canvas;
+  color: CanvasText;
+}
+
+a {
+  color: inherit;
+}
+
+.reader-shell {
+  width: min(1440px, 100%);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reader-header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.65;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.35rem, 3vw, 2.1rem);
+  line-height: 1.15;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  opacity: 0.72;
+}
+
+.reader-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.button {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  border: 1px solid color-mix(in srgb, CanvasText 22%, transparent);
+  border-radius: 10px;
+  background: Canvas;
+  text-decoration: none;
+  font-weight: 650;
+}
+
+.button:hover,
+.button:focus-visible {
+  border-color: CanvasText;
+  outline: none;
+}
+
+.button-primary {
+  background: CanvasText;
+  color: Canvas;
+}
+
+.viewer {
+  height: calc(100vh - 170px);
+  min-height: 520px;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, CanvasText 18%, transparent);
+  border-radius: 14px;
+  background: color-mix(in srgb, CanvasText 5%, Canvas);
+}
+
+.viewer iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.fallback {
+  margin: 12px 2px 0;
+  font-size: 0.9rem;
+  opacity: 0.72;
+}
+
+@media (max-width: 760px) {
+  .reader-shell {
+    padding: 14px;
+  }
+
+  .reader-header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .reader-actions {
+    justify-content: stretch;
+  }
+
+  .button {
+    flex: 1 1 150px;
+  }
+
+  .viewer {
+    height: 72vh;
+    min-height: 460px;
+  }
+}

@@ -6,9 +6,13 @@ Coletânea educacional de redações relacionadas ao tema oficial do ENEM 2025:
 
 O projeto organiza, em um único PDF, redações nota 1000 divulgadas publicamente e um modelo pedagógico de excelência. O objetivo é facilitar o estudo de estrutura argumentativa, repertório sociocultural, coesão e proposta de intervenção.
 
-## Baixar a coletânea
+## Ler online ou baixar
+
+[📖 Abrir o leitor digital](https://heazts.github.io/redacoes-nota-1000-enem-2025/)
 
 [Baixar o PDF completo](coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf)
+
+> Em navegadores móveis que não exibem PDF dentro da página, use **Abrir em tela cheia** no leitor.
 
 Pesquisa atualizada em **3 de agosto de 2026**.
 
@@ -29,6 +33,8 @@ Pesquisa atualizada em **3 de agosto de 2026**.
 
 ## Arquivos
 
+- `index.html`: leitor digital publicado via GitHub Pages.
+- `assets/reader.css`: estilos responsivos do leitor.
 - `coletanea/`: PDF completo para leitura e estudo.
 - `dados/catalogo.csv`: catálogo em formato aberto, com link direto e data de acesso a cada fonte.
 - `fontes/FONTES.md`: relação das fontes mencionadas no material, com URL exata por redação.
