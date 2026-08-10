@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta
     http-equiv="Content-Security-Policy"
-    content="default-src 'self'; base-uri 'none'; form-action 'none'; object-src 'self'; frame-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'none'; connect-src 'none'; upgrade-insecure-requests"
+    content="default-src 'self'; base-uri 'none'; form-action 'none'; object-src 'self'; frame-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; upgrade-insecure-requests"
   >
   <meta name="referrer" content="no-referrer">
   <meta name="color-scheme" content="light dark">
@@ -15,17 +15,20 @@
     content="Leia online a coletânea educacional de redações Nota 1000 do ENEM 2025."
   >
   <link rel="stylesheet" href="./assets/reader.css">
+  <script src="./assets/reader.js" defer></script>
 </head>
 <body>
   <main class="reader-shell">
     <header class="reader-header">
-      <div>
+      <div class="hero-copy">
         <p class="eyebrow">Coletânea educacional</p>
         <h1>Redações Nota 1000 — ENEM 2025</h1>
-        <p class="subtitle">Leia o PDF diretamente no navegador.</p>
+        <p class="subtitle">Leia o PDF diretamente no navegador com um modo mais confortável para estudo.</p>
       </div>
 
       <nav class="reader-actions" aria-label="Ações do documento">
+        <button class="button" type="button" data-action="toggle-focus" aria-pressed="false">Leitura confortável: desligada</button>
+        <button class="button" type="button" data-action="toggle-dark-pdf" aria-pressed="false">Modo escuro do PDF: desligado</button>
         <a
           class="button button-primary"
           href="./coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf"
@@ -37,31 +40,47 @@
           href="./coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf"
           download
         >Baixar PDF</a>
-        <a
-          class="button"
-          href="https://github.com/Heazts/redacoes-nota-1000-enem-2025"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Ver projeto</a>
       </nav>
     </header>
 
-    <section class="viewer" aria-label="Leitor do PDF">
-      <iframe
-        src="./coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf#view=FitH&toolbar=1"
-        title="Coletânea de Redações Nota 1000 do ENEM 2025"
-        referrerpolicy="no-referrer"
-      ></iframe>
+    <section class="reader-tips" aria-label="Dicas de leitura">
+      <p><strong>Dica:</strong> use <em>Leitura confortável</em> para reduzir distrações e <em>Modo escuro do PDF</em> para estudar à noite.</p>
+      <p class="muted">O modo escuro é aplicado visualmente ao PDF embutido; a aparência pode variar um pouco entre navegadores.</p>
     </section>
 
-    <p class="fallback">
-      Se o leitor embutido não funcionar no seu navegador,
-      <a
-        href="./coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >abra o PDF diretamente</a>.
-    </p>
+    <section class="viewer-card" aria-label="Leitor do PDF">
+      <div class="viewer-toolbar" aria-hidden="true">
+        <span class="status-dot"></span>
+        <span>Leitor online da coletânea</span>
+      </div>
+
+      <div class="viewer">
+        <iframe
+          id="pdf-viewer"
+          src="./coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf#view=FitH&toolbar=1"
+          title="Coletânea de Redações Nota 1000 do ENEM 2025"
+          referrerpolicy="no-referrer"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </section>
+
+    <footer class="reader-footer">
+      <p>
+        Se o leitor embutido não funcionar no seu navegador,
+        <a
+          href="./coletanea/Coletanea_Redacoes_ENEM_2025_By_Heazts.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >abra o PDF diretamente</a>
+        ou veja o
+        <a
+          href="https://github.com/Heazts/redacoes-nota-1000-enem-2025"
+          target="_blank"
+          rel="noopener noreferrer"
+        >projeto no GitHub</a>.
+      </p>
+    </footer>
   </main>
 </body>
 </html>
